@@ -333,6 +333,7 @@ footer {
     width: 700px;
     margin: 0 auto;
   }
+  
 
 }
 @media screen and (max-width: 900px){
@@ -340,17 +341,48 @@ footer {
     float:none;
     margin: 0 auto;
     padding: 0;
+    padding-right: 5%;
   }
   .port-2{
     float:none;
     margin: 0 auto;
     padding: 0;
+    padding-right: 5%;
   }
   .hover-parent{
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 767px){
+
+  figure.hover-parent {
+    width: 200px;
+    height: 175px;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    }
+    figcaption.hover-mask {
+    width: 200px;
+    height: 175px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    }
+  
+    figure.hover-parent:hover .hover-mask {
+      opacity: 1;
+      transition:all 0.6s ease;
+      }
 .nav1{
   margin-left: 50px;
 }
