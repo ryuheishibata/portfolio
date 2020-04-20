@@ -341,13 +341,11 @@ footer {
     float:none;
     margin: 0 auto;
     padding: 0;
-    padding-right: 5%;
   }
   .port-2{
     float:none;
     margin: 0 auto;
     padding: 0;
-    padding-right: 5%;
   }
   .hover-parent{
     margin: 0 auto;
@@ -361,10 +359,9 @@ footer {
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
-    margin-right: 5%;
+    margin:0 auto;
     }
     figcaption.hover-mask { 
-    margin-right: 5%;
     width: 200px;
     height: 175px;
     position: absolute;
@@ -375,10 +372,10 @@ footer {
     background: rgba(0,0,0,0.5);
     opacity: 0;
     color: #fff;
-    display: flex;
     align-items: center;
     text-align: center;
     padding: 30px;
+    margin:0 auto;
     }
   
     figure.hover-parent:hover .hover-mask {
@@ -522,16 +519,19 @@ display: none;
   width: 320px;
   margin:0 auto;
   float:none;
+  padding: 0;
 }
 .srength2{
   width: 320px;
   margin:0 auto;
   float:none;
+  padding: 0;
 }
 .srength3{
   width:320px;
   margin:0 auto;
   float:none;
+  padding: 0;
 }
 .f-box{
   padding-bottom: 90px;
@@ -633,3 +633,35 @@ br.pc{
     background:rgba(3,3,3,0.9); 
    }
 }
+@media screen and (max-width:450px){}
+figure.hover-parent {
+  width: 200px;
+  height: 175px;
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+  margin-right: 5px;
+  }
+  figcaption.hover-mask { 
+  width: 200px;
+  height: 175px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  margin-right: 5px;
+  }
+
+  figure.hover-parent:hover .hover-mask {
+    opacity: 1;
+    transition:all 0.6s ease;
+    }
+  }
