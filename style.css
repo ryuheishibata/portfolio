@@ -361,8 +361,10 @@ footer {
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
+    margin-right: 5%;
     }
-    figcaption.hover-mask {
+    figcaption.hover-mask { 
+    margin-right: 5%;
     width: 200px;
     height: 175px;
     position: absolute;
