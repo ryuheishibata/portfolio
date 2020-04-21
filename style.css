@@ -29,6 +29,9 @@ header{
   background-color:rgba(3,3,3,0.9);
 }
 /* 付け加え */
+.port-3{
+  display: none;
+}
 body{
   width: 100%;
 }
@@ -139,7 +142,7 @@ figure.hover-parent {
   background-position:center;
 }
 .box1{
-  width:920px;
+  width:800px;
   margin:0 auto;
 }
 .subtitle{
@@ -310,6 +313,7 @@ footer {
   padding-top: 32px;
   color:#FAFAFA;
 }
+
 @media screen and (max-width: 1200px){
   .nav1{
     margin-left: 40%;
@@ -337,32 +341,60 @@ footer {
 
 }
 @media screen and (max-width: 900px){
+  .filter{
+    background:#000;
+  }
+  .port-img3{
+    opacity: 0.7;
+  }
+  .port-3{
+    display: block;
+    position: relative;
+  }
+  .port-text3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    color:black;
+  }
+  .port-text4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding-bottom: 40px;
+    color:black;
+  }
+  .port-img3{
+  margin:0 auto;
+  width: 250px;
+  display: block;
+  }
   .port-1{
-    float:none;
-    margin: 0 auto;
-    padding: 0;
+  display:none;
   }
   .port-2{
     float:none;
     margin: 0 auto;
-    padding: 0;
+    display: none;
   }
-  .hover-parent{
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 767px){
-
   figure.hover-parent {
-    width: 200px;
+    width: 80%;
     height: 175px;
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
-    margin:0 auto;
     }
-    figcaption.hover-mask { 
-    width: 200px;
+    figcaption.hover-mask {
+    width: 80%;
     height: 175px;
     position: absolute;
     top: 0;
@@ -372,16 +404,20 @@ footer {
     background: rgba(0,0,0,0.5);
     opacity: 0;
     color: #fff;
+    display: flex;
     align-items: center;
     text-align: center;
     padding: 30px;
-    margin:0 auto;
     }
   
     figure.hover-parent:hover .hover-mask {
       opacity: 1;
       transition:all 0.6s ease;
-      }
+}
+}
+@media screen and (max-width: 830px){
+
+
 .nav1{
   margin-left: 50px;
 }
@@ -523,7 +559,7 @@ display: none;
 }
 .srength2{
   width: 320px;
-  margin:0 auto;
+  margin:40px auto;
   float:none;
   padding: 0;
 }
