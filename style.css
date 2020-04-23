@@ -39,7 +39,8 @@ header{
   width: 250px;
   height: 175px;
   background-image: url(img/screen3.png);
-  background-position: center;}
+  background-position: center;
+}
 .fadein {
 	opacity : 0.1;
 	transform : translate(0, 50px);
