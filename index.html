@@ -36,13 +36,13 @@
         </header>
         <main>
           <div class="main-visual">
-            <h4 class="text-center">welcome!</h4>
-            <h1 class="text-center">I'm Ryuhei Shibata</h1>
+            <h4 class="text-center div">welcome!</h4>
+            <h1 class="text-center div">I'm Ryuhei Shibata</h1>
           </div>
           <div class="profile" id="1">
-            <div class="profile-box scroll-fade">
+            <div class="profile-box">
               <h1 class="subtitle">About</h1>
-                <div class="profile-main clearfix">
+                <div class="profile-main clearfix fadein">
                   <div class="my-face">
                     <div class="profile-img"></div>
                   </div>
@@ -63,11 +63,12 @@
           <div class="portfolio" id="2">
             <div class="box1">
               <h1 class="subtitle">Portfolio</h1>
+              <div class="fadein">
               <p class="port-text text-center">成果物です。クリックすると拡大します。</p>
               <div class="photo-box clearfix">
                 <div class="port-1">
                 <figure class="hover-parent">
-                  <img src="img/screen.png" width="250" height="175">
+                  <img src="img/screen3.png" width="250" height="175">
                   <figcaption class="hover-mask">
                     <a href="img/screen.png" data-lightbox="group"><h4 class="text-white text-center" width="250px" height="175px">ポートフォリオサイト作成</h4></a>             
                   </figcaption>
@@ -75,7 +76,7 @@
                 </div>
                 <div class="port-2">
                 <figure class="hover-parent">
-                  <img src="img/screen2.png" width="300" height="300">
+                  <img src="img/screen4.png" width="300" height="300">
                   <figcaption class="hover-mask">
                     <a href="img/screen2.png" data-lightbox="group"><h4 class="text-white text-center">サイト模写作成</h4></a>
                   </figcaption>
@@ -83,19 +84,20 @@
                 </div>
                 <div class="port-3">
                   <div class="port-img3">
-                      <img src="img/screen.png" width="250" height="175" class="filter">
+                      <img src="img/screen3.png" width="250" height="175" class="filter">
                   </div>
                       <a href="img/screen.png" data-lightbox="group"><h4
                          class="port-text3 text-center">ポートフォリオ作成</h4></a>
                          <p class="text-center">制作日（2020年4月）</p>
-                  </div>
+                </div>
                   <div class="port-3 py-4">
                     <div class="port-img3">
-                        <img src="img/screen2.png" width="250" height="175">
+                        <img src="img/screen4.png" width="250" height="175">
                     </div>
                         <a href="img/screen2.png" data-lightbox="group"><h4 class=" text-center port-text4">サイト模写作成</h4></a>
                         <p class="text-center">制作日（2020年3月）</p>
-                    </div>
+                  </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -105,21 +107,21 @@
               <p class="port-text">web制作をメインにお仕事承ります。<br>
               お見積り無料ですのでご気軽にご相談下さい。</p>
               <div class="f-box clearfix">
-                <div class="srength1">
+                <div class="srength1 py-4 px-2 fadein">
                   <div class="sub">
                     <i class="fa fa-desktop"></i>
                     <p class="sublist">コーディング</p>
                   </div>
                     <p class="srength-text">デザインカンプから、適切にコーディング致します。デザインはあるのに、コーディングが出来ないという方は是非一度ご検討下さい。</p>
                 </div>
-                <div class="srength2">
+                <div class="srength2 py-4 px-2 fadein">
                   <div class="sub">
                     <i class="fas fa-mobile-alt fa-4x"></i>
                     <p class="sublist">スマホ対応</p>
                   </div>
                   <p class="srength-text">現在80％以上のWebサイトがスマートフォンで閲覧されています。レスポンシブ対応の出来てないWebサイトがありましたら是非お問い合わせ下さい。</p>
                 </div>
-                <div class="srength3 clearfix">
+                <div class="srength3 clearfix py-4 px-2 fadein">
                   <div class="sub">
                     <i class="fas fa-cogs"></i>
                     <p class="sublist">ページ修正</p>
@@ -131,7 +133,7 @@
           <div class="contact" id="4">
             <h1 class="subtitle">Contact</h1>
             <p class="port-text">お見積り無料です。ご気軽にご相談下さい。</p>
-            <div class="contact-text clearfix">
+            <div class="contact-text clearfix fadein">
               <div class="contact-text1">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdImn0ZmxsO38kW8bUzAP_78KXH1at92vS2jcHD6mopTqBc8g/viewform?usp=sf_link" target="_blank" class="text-center"><i class="fas fa-envelope fa-6x"></i></a>
               </div>
@@ -153,6 +155,14 @@
                 <script src="js/jquery.min.js"></script>
                 <script src="js/jquery.bxslider/jquery.bxslider.js"></script>
                 <link rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css"></script>
+
+                <script>
+                  
+$(function() {
+  // 一旦hide()で隠してフェードインさせる
+  $('.div').hide().fadeIn('slow');
+});
+                </script>
       </div>
   </body>
 </html>

@@ -29,6 +29,19 @@ header{
   background-color:rgba(3,3,3,0.9);
 }
 /* 付け加え */
+
+.fadein {
+	opacity : 0.1;
+	transform : translate(0, 50px);
+	transition : all 500ms;
+	}
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+  }
+  
 .port-3{
   display: none;
 }
@@ -198,16 +211,26 @@ figure.hover-parent {
 .srength1{
   width: 320px;
   float:left;
+  border:solid 2px #333;
+  border-radius: 7px;
+  height:280px;
 }
 .srength2{
   width: 320px;
   float:left;
   margin-left: 10px;
   margin-right: 10px;
+  border:solid 2px #333;
+  border-radius: 7px;
+  box-shadow: 4px;
+  height:280px;
 }
 .srength3{
   width: 320px;
   float:left;
+  border:solid 2px #333;
+  border-radius: 7px;
+  height:280px;
 }
 .f-box{
   padding-bottom: 90px;
@@ -325,7 +348,7 @@ footer {
   }
   .srength2{
     width: 320px;
-    margin:0 auto;
+    margin:40px auto;
     float:none;
   }
   .srength3{
@@ -555,19 +578,16 @@ display: none;
   width: 320px;
   margin:0 auto;
   float:none;
-  padding: 0;
 }
 .srength2{
   width: 320px;
   margin:40px auto;
   float:none;
-  padding: 0;
 }
 .srength3{
   width:320px;
   margin:0 auto;
   float:none;
-  padding: 0;
 }
 .f-box{
   padding-bottom: 90px;

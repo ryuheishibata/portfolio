@@ -39,7 +39,7 @@ $(function(){
           });
         });
   $(function(){
-var effect_pos = 700; // 画面下からどの位置でフェードさせるか(px)
+var effect_pos = 100; // 画面下からどの位置でフェードさせるか(px)
 var effect_move = 50; // どのぐらい要素を動かすか(px)
 var effect_time = 1000; // エフェクトの時間(ms) 1秒なら1000
 
@@ -78,4 +78,18 @@ var position = target.offset().top;
 $("html, body").animate({scrollTop:position}, speed, "swing");
 return false;
 });
+});
+
+
+$(function(){
+	$(window).scroll(function (){
+		$('.fadein').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll > elemPos - windowHeight + 200){
+				$(this).addClass('scrollin');
+			}
+		});
+	});
 });
