@@ -29,7 +29,17 @@ header{
   background-color:rgba(3,3,3,0.9);
 }
 /* 付け加え */
-
+.port9{
+  width: 200px;
+  height: 175px;
+  background-image: url(img/screen3.png);
+  background-position: center;
+}
+.port8{
+  width: 250px;
+  height: 175px;
+  background-image: url(img/screen3.png);
+  background-position: center;}
 .fadein {
 	opacity : 0.1;
 	transform : translate(0, 50px);
